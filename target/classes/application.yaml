@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://tt-psfs.postgres.database.azure.com:5432/postgres?sslmode=require
+    username: tonytomy_microsoft.com#EXT#@fdpo.onmicrosoft.com
+    azure:
+      passwordless-enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+  # Connection pool settings
+  hikari:
+    maximum-pool-size: 10
+    minimum-idle: 5
+    connection-timeout: 30000
+    idle-timeout: 600000
+
+  cloud:
+    azure:
+      credential:
+        managed-identity-enabled: false
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
