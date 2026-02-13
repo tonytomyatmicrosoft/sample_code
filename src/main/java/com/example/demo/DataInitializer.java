@@ -50,5 +50,7 @@ public class DataInitializer implements CommandLineRunner {
         repository.save(new VscodeExtension("Thunder Client", "Lightweight REST API client for VS Code", "Thunder Client", 12000000, 4.6));
 
         System.out.println(">>> Inserted 8 sample records into the 'vscode' table.");
+        System.out.println(">>> Done. Exiting application.");
+        System.exit(0);
     }
 }
