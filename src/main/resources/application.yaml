@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:postgresql://tt-psfs.postgres.database.azure.com:5432/postgres?sslmode=require
-    username: tonytomy_microsoft.com#EXT#@fdpo.onmicrosoft.com
+    username: pgfs-uami
     azure:
       passwordless-enabled: true
 
@@ -24,7 +24,8 @@ spring:
   cloud:
     azure:
       credential:
-        managed-identity-enabled: false
+        managed-identity-enabled: true
+        client-id: 9699c4d3-42fa-4538-b75d-674208972ba3
 
 server:
   port: 8080

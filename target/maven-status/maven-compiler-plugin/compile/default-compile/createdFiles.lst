@@ -1,0 +1,5 @@
+com\example\demo\AzurePostgresqlDemoApplication.class
+com\example\demo\DataInitializer.class
+com\example\demo\model\VscodeExtension.class
+com\example\demo\repository\VscodeExtensionRepository.class
+com\example\demo\controller\VscodeExtensionController.class
