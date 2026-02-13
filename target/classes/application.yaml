@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:postgresql://tt-psfs.postgres.database.azure.com:5432/postgres?sslmode=require
-    username: tonytomy_microsoft.com#EXT#@fdpo.onmicrosoft.com
+    username: pgfs-uami
     azure:
       passwordless-enabled: true
 
